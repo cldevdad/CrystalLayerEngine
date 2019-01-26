@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Actions\CLAction.h" />
+    <ClInclude Include="src\Actions\CLActionCallFunc.h" />
+    <ClInclude Include="src\Actions\CLActionCallFuncEx.h" />
+    <ClInclude Include="src\Actions\CLActionDelay.h" />
+    <ClInclude Include="src\Actions\CLActionFadeTo.h" />
+    <ClInclude Include="src\Actions\CLActionMoveBy.h" />
+    <ClInclude Include="src\Actions\CLActionMoveTo.h" />
+    <ClInclude Include="src\Actions\CLActionScaleTo.h" />
+    <ClInclude Include="src\Actions\CLActionSequence.h" />
+    <ClInclude Include="src\Actors\CLAActor.h" />
+    <ClInclude Include="src\Actors\CLAButton.h" />
+    <ClInclude Include="src\Actors\CLALabel.h" />
+    <ClInclude Include="src\Actors\CLAParticles.h" />
+    <ClInclude Include="src\Actors\CLASprite.h" />
+    <ClInclude Include="src\Audio\CLAudioEngine.h" />
+    <ClInclude Include="src\Core\CLActorPool.h" />
+    <ClInclude Include="src\Core\CLEvent.h" />
+    <ClInclude Include="src\Core\CLGame.h" />
+    <ClInclude Include="src\Core\CLScene.h" />
+    <ClInclude Include="src\Core\CLTypes.h" />
+    <ClInclude Include="src\Core\d_printf.h" />
+    <ClInclude Include="src\CrystalLayer.h" />
+    <ClInclude Include="src\Input\CLGamepad.h" />
+    <ClInclude Include="src\Renderer\CLRenderer.h" />
+    <ClInclude Include="src\Renderer\CLSurface.h" />
+    <ClInclude Include="src\Renderer\CLTexture.h" />
+    <ClInclude Include="src\Renderer\CLWindow.h" />
+    <ClInclude Include="src\targetver.h" />
+    <ClInclude Include="src\_external\rapidjson\include\allocators.h" />
+    <ClInclude Include="src\_external\rapidjson\include\cursorstreamwrapper.h" />
+    <ClInclude Include="src\_external\rapidjson\include\document.h" />
+    <ClInclude Include="src\_external\rapidjson\include\encodedstream.h" />
+    <ClInclude Include="src\_external\rapidjson\include\encodings.h" />
+    <ClInclude Include="src\_external\rapidjson\include\error\en.h" />
+    <ClInclude Include="src\_external\rapidjson\include\error\error.h" />
+    <ClInclude Include="src\_external\rapidjson\include\filereadstream.h" />
+    <ClInclude Include="src\_external\rapidjson\include\filewritestream.h" />
+    <ClInclude Include="src\_external\rapidjson\include\fwd.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\biginteger.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\diyfp.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\dtoa.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\ieee754.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\itoa.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\meta.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\pow10.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\regex.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\stack.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\strfunc.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\strtod.h" />
+    <ClInclude Include="src\_external\rapidjson\include\internal\swap.h" />
+    <ClInclude Include="src\_external\rapidjson\include\istreamwrapper.h" />
+    <ClInclude Include="src\_external\rapidjson\include\memorybuffer.h" />
+    <ClInclude Include="src\_external\rapidjson\include\memorystream.h" />
+    <ClInclude Include="src\_external\rapidjson\include\msinttypes\inttypes.h" />
+    <ClInclude Include="src\_external\rapidjson\include\msinttypes\stdint.h" />
+    <ClInclude Include="src\_external\rapidjson\include\ostreamwrapper.h" />
+    <ClInclude Include="src\_external\rapidjson\include\pointer.h" />
+    <ClInclude Include="src\_external\rapidjson\include\prettywriter.h" />
+    <ClInclude Include="src\_external\rapidjson\include\rapidjson.h" />
+    <ClInclude Include="src\_external\rapidjson\include\reader.h" />
+    <ClInclude Include="src\_external\rapidjson\include\schema.h" />
+    <ClInclude Include="src\_external\rapidjson\include\stream.h" />
+    <ClInclude Include="src\_external\rapidjson\include\stringbuffer.h" />
+    <ClInclude Include="src\_external\rapidjson\include\writer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Actions\CLAction.cpp" />
+    <ClCompile Include="src\Actions\CLActionCallFunc.cpp" />
+    <ClCompile Include="src\Actions\CLActionCallFuncEx.cpp" />
+    <ClCompile Include="src\Actions\CLActionDelay.cpp" />
+    <ClCompile Include="src\Actions\CLActionFadeTo.cpp" />
+    <ClCompile Include="src\Actions\CLActionMoveBy.cpp" />
+    <ClCompile Include="src\Actions\CLActionMoveTo.cpp" />
+    <ClCompile Include="src\Actions\CLActionScaleTo.cpp" />
+    <ClCompile Include="src\Actions\CLActionSequence.cpp" />
+    <ClCompile Include="src\Actors\CLAActor.cpp" />
+    <ClCompile Include="src\Actors\CLAButton.cpp" />
+    <ClCompile Include="src\Actors\CLALabel.cpp" />
+    <ClCompile Include="src\Actors\CLAParticles.cpp" />
+    <ClCompile Include="src\Actors\CLASprite.cpp" />
+    <ClCompile Include="src\Audio\CLAudioEngine.cpp" />
+    <ClCompile Include="src\Core\CLActorPool.cpp" />
+    <ClCompile Include="src\Core\CLEvent.cpp" />
+    <ClCompile Include="src\Core\CLGame.cpp" />
+    <ClCompile Include="src\Core\CLScene.cpp" />
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\Input\CLGamepad.cpp" />
+    <ClCompile Include="src\Renderer\CLRenderer.cpp" />
+    <ClCompile Include="src\Renderer\CLSurface.cpp" />
+    <ClCompile Include="src\Renderer\CLTexture.cpp" />
+    <ClCompile Include="src\Renderer\CLWindow.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1AD57128-49F3-4C0C-B714-069558EEA51D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CrystalLayerEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CRYSTALLAYERENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\_external\sdl2\include\;$(SolutionDir)src\_external\sdl2_image\;$(SolutionDir)src\_external\sdl2_mixer\;$(SolutionDir)src\_external\sdl2_ttf\;$(SolutionDir)src\_external\rapidjson\include\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)src\_external\rapidjson\include\error\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\error\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\internal\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\internal\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\msinttypes\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\msinttypes\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2\include\*.h $(SolutionDir)..\Distribution\include\_external\sdl2\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_image\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_image\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_mixer\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_mixer\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_ttf\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_ttf\ /s /d
+xcopy $(SolutionDir)src\CrystalLayer.h $(SolutionDir)..\Distribution\include\ /s /d
+xcopy $(SolutionDir)src\Actions\*.h $(SolutionDir)..\Distribution\include\Actions\ /s /d
+xcopy $(SolutionDir)src\Actors\*.h $(SolutionDir)..\Distribution\include\Actors\ /s /d
+xcopy $(SolutionDir)src\Audio\*.h $(SolutionDir)..\Distribution\include\Audio\ /s /d
+xcopy $(SolutionDir)src\Core\*.h $(SolutionDir)..\Distribution\include\Core\ /s /d
+xcopy $(SolutionDir)src\Input\*.h $(SolutionDir)..\Distribution\include\Input\ /s /d
+xcopy $(SolutionDir)src\Renderer\*.h $(SolutionDir)..\Distribution\include\Renderer\ /s /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;CRYSTALLAYERENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\_external\sdl2\include\;$(SolutionDir)src\_external\sdl2_image\;$(SolutionDir)src\_external\sdl2_mixer\;$(SolutionDir)src\_external\sdl2_ttf\;$(SolutionDir)src\_external\rapidjson\include\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)src\_external\rapidjson\include\error\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\error\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\internal\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\internal\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\msinttypes\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\msinttypes\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2\include\*.h $(SolutionDir)..\Distribution\include\_external\sdl2\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_image\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_image\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_mixer\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_mixer\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_ttf\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_ttf\ /s /d
+xcopy $(SolutionDir)src\CrystalLayer.h $(SolutionDir)..\Distribution\include\ /s /d
+xcopy $(SolutionDir)src\Actions\*.h $(SolutionDir)..\Distribution\include\Actions\ /s /d
+xcopy $(SolutionDir)src\Actors\*.h $(SolutionDir)..\Distribution\include\Actors\ /s /d
+xcopy $(SolutionDir)src\Audio\*.h $(SolutionDir)..\Distribution\include\Audio\ /s /d
+xcopy $(SolutionDir)src\Core\*.h $(SolutionDir)..\Distribution\include\Core\ /s /d
+xcopy $(SolutionDir)src\Input\*.h $(SolutionDir)..\Distribution\include\Input\ /s /d
+xcopy $(SolutionDir)src\Renderer\*.h $(SolutionDir)..\Distribution\include\Renderer\ /s /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CRYSTALLAYERENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\_external\sdl2\include\;$(SolutionDir)src\_external\sdl2_image\;$(SolutionDir)src\_external\sdl2_mixer\;$(SolutionDir)src\_external\sdl2_ttf\;$(SolutionDir)src\_external\rapidjson\include\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)src\_external\rapidjson\include\error\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\error\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\internal\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\internal\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\msinttypes\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\msinttypes\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2\include\*.h $(SolutionDir)..\Distribution\include\_external\sdl2\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_image\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_image\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_mixer\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_mixer\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_ttf\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_ttf\ /s /d
+xcopy $(SolutionDir)src\CrystalLayer.h $(SolutionDir)..\Distribution\include\ /s /d
+xcopy $(SolutionDir)src\Actions\*.h $(SolutionDir)..\Distribution\include\Actions\ /s /d
+xcopy $(SolutionDir)src\Actors\*.h $(SolutionDir)..\Distribution\include\Actors\ /s /d
+xcopy $(SolutionDir)src\Audio\*.h $(SolutionDir)..\Distribution\include\Audio\ /s /d
+xcopy $(SolutionDir)src\Core\*.h $(SolutionDir)..\Distribution\include\Core\ /s /d
+xcopy $(SolutionDir)src\Input\*.h $(SolutionDir)..\Distribution\include\Input\ /s /d
+xcopy $(SolutionDir)src\Renderer\*.h $(SolutionDir)..\Distribution\include\Renderer\ /s /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CRYSTALLAYERENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\_external\sdl2\include\;$(SolutionDir)src\_external\sdl2_image\;$(SolutionDir)src\_external\sdl2_mixer\;$(SolutionDir)src\_external\sdl2_ttf\;$(SolutionDir)src\_external\rapidjson\include\</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Distribution\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)src\_external\rapidjson\include\error\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\error\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\internal\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\internal\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\msinttypes\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\msinttypes\ /s /d
+xcopy $(SolutionDir)src\_external\rapidjson\include\*.h $(SolutionDir)..\Distribution\include\_external\rapidjson\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2\include\*.h $(SolutionDir)..\Distribution\include\_external\sdl2\include\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_image\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_image\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_mixer\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_mixer\ /s /d
+xcopy $(SolutionDir)src\_external\sdl2_ttf\*.h $(SolutionDir)..\Distribution\include\_external\sdl2_ttf\ /s /d
+xcopy $(SolutionDir)src\CrystalLayer.h $(SolutionDir)..\Distribution\include\ /s /d
+xcopy $(SolutionDir)src\Actions\*.h $(SolutionDir)..\Distribution\include\Actions\ /s /d
+xcopy $(SolutionDir)src\Actors\*.h $(SolutionDir)..\Distribution\include\Actors\ /s /d
+xcopy $(SolutionDir)src\Audio\*.h $(SolutionDir)..\Distribution\include\Audio\ /s /d
+xcopy $(SolutionDir)src\Core\*.h $(SolutionDir)..\Distribution\include\Core\ /s /d
+xcopy $(SolutionDir)src\Input\*.h $(SolutionDir)..\Distribution\include\Input\ /s /d
+xcopy $(SolutionDir)src\Renderer\*.h $(SolutionDir)..\Distribution\include\Renderer\ /s /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

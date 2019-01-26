@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\CrystalLayer.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\targetver.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLAction.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionCallFunc.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionCallFuncEx.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionDelay.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionFadeTo.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionMoveBy.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionMoveTo.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionScaleTo.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actions\CLActionSequence.h">
+      <Filter>Source\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\CLAActor.h">
+      <Filter>Source\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\CLAButton.h">
+      <Filter>Source\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\CLALabel.h">
+      <Filter>Source\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\CLAParticles.h">
+      <Filter>Source\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\CLASprite.h">
+      <Filter>Source\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Audio\CLAudioEngine.h">
+      <Filter>Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\CLActorPool.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\CLGame.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\CLScene.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\CLTypes.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\d_printf.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\CLGamepad.h">
+      <Filter>Source\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\CLRenderer.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\CLSurface.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\CLTexture.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\CLWindow.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\msinttypes\stdint.h">
+      <Filter>Source\_external\rapid_json\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\msinttypes\inttypes.h">
+      <Filter>Source\_external\rapid_json\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\swap.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\biginteger.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\diyfp.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\dtoa.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\ieee754.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\itoa.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\meta.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\pow10.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\regex.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\stack.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\strfunc.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\internal\strtod.h">
+      <Filter>Source\_external\rapid_json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\error\error.h">
+      <Filter>Source\_external\rapid_json\error</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\error\en.h">
+      <Filter>Source\_external\rapid_json\error</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\writer.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\allocators.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\cursorstreamwrapper.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\document.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\encodedstream.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\encodings.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\filereadstream.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\filewritestream.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\fwd.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\istreamwrapper.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\memorybuffer.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\memorystream.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\ostreamwrapper.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\pointer.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\prettywriter.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\rapidjson.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\reader.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\schema.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\stream.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_external\rapidjson\include\stringbuffer.h">
+      <Filter>Source\_external\rapid_json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\CLEvent.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLAction.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionCallFunc.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionCallFuncEx.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionDelay.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionFadeTo.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionMoveBy.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionMoveTo.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionScaleTo.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actions\CLActionSequence.cpp">
+      <Filter>Source\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\CLAActor.cpp">
+      <Filter>Source\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\CLAButton.cpp">
+      <Filter>Source\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\CLALabel.cpp">
+      <Filter>Source\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\CLAParticles.cpp">
+      <Filter>Source\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\CLASprite.cpp">
+      <Filter>Source\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Audio\CLAudioEngine.cpp">
+      <Filter>Source\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\CLActorPool.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\CLGame.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\CLScene.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\CLGamepad.cpp">
+      <Filter>Source\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\CLRenderer.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\CLSurface.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\CLTexture.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\CLWindow.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\CLEvent.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{31b0340b-d651-4fd7-b7d8-35d140e45e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Actions">
+      <UniqueIdentifier>{b13e40b5-afee-4a6c-a031-d64e518a1854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Actors">
+      <UniqueIdentifier>{fc89a279-720b-49b2-ab39-10b59c5c7a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio">
+      <UniqueIdentifier>{55590771-1a16-4b06-89aa-fa1e2e4be8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{2062008a-12f6-490f-a8ec-71d5124465df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Input">
+      <UniqueIdentifier>{2c449a75-1927-4f4e-b51b-fc26861deddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Renderer">
+      <UniqueIdentifier>{68ce7592-dc05-4849-a3e4-2a64859fba08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\_external">
+      <UniqueIdentifier>{f5154f7b-c2e6-41c1-bab5-55803e8f76c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\_external\rapid_json">
+      <UniqueIdentifier>{e933ec6d-bf7b-47c8-a36c-eb116b6e1838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\_external\rapid_json\internal">
+      <UniqueIdentifier>{9586635b-8c7d-4f74-bfd1-75fced674109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\_external\rapid_json\error">
+      <UniqueIdentifier>{56264a57-2a4a-4d5d-889d-d8098d5e40bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\_external\rapid_json\msinttypes">
+      <UniqueIdentifier>{0dad5ca0-3b22-4e79-bd40-5d2040566720}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
