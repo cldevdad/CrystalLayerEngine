@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{a86df43f-be7c-4ebd-b98a-ccb9a099659a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SwaapGame\Scenes\TestScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SwaapGame\Scenes\GameplayScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SwaapGame\Scenes\MainMenuScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SwaapGame\Scenes\SplashScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SwaapGame\SwaapColorEntity.h" />
+    <ClInclude Include="SwaapGame\SwaapEnemy.h" />
+    <ClInclude Include="SwaapGame\SwaapGame.h" />
+    <ClInclude Include="SwaapGame\SwaapShip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SwaapGame\Scenes\GameplayScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SwaapGame\Scenes\MainMenuScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SwaapGame\Scenes\SplashScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SwaapGame\Scenes\TestScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SwaapGame\Main.cpp" />
+    <ClCompile Include="SwaapGame\SwaapColorEntity.cpp" />
+    <ClCompile Include="SwaapGame\SwaapEnemy.cpp" />
+    <ClCompile Include="SwaapGame\SwaapGame.cpp" />
+    <ClCompile Include="SwaapGame\SwaapShip.cpp" />
+  </ItemGroup>
+</Project>

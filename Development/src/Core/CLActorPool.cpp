@@ -216,7 +216,7 @@ void CLActorPool::DestroyAllActors()
     auto FinishTime = high_resolution_clock::now();
     auto ElapsedTime = duration_cast<milliseconds>(FinishTime - StartTime);
     float ElapsedSeconds = ElapsedTime.count() * 0.001f;
-    d_printgood("[%s] Destroyed %d Actors in %.3f seconds\n", __FUNCTION__, ActorCount, ElapsedSeconds);
+    d_printgood("[%s] Destroyed %d Actors in %.3f seconds\n", __FUNCTION__, (int)ActorCount, ElapsedSeconds);
 #   endif
 }
 
@@ -267,8 +267,8 @@ CLASprite* CLActorPool::FindSprite(const char* id)
 void CLActorPool::AddActorsFromFile(const char* fileName)
 {
 #   ifdef _PROFILING
-    auto StartTime = chrono::high_resolution_clock::now();
-    int  StartSize = m_Actors.size();
+    auto   StartTime = chrono::high_resolution_clock::now();
+    size_t StartSize = m_Actors.size();
 #   endif
 
     ifstream inFile(fileName, ios::in);
@@ -358,7 +358,7 @@ void CLActorPool::AddActorsFromFile(const char* fileName)
             {
                 gp.font = JsonValue["font"].GetString();
                 gp.text = JsonValue["text"].GetString();
-                gp.fontSize = JsonValue["fontSize"].GetInt();
+                gp.fontSize = JsonValue["fontSize"].GetFloat();
             }
 
             AddNewGroup(gp);
@@ -369,7 +369,7 @@ void CLActorPool::AddActorsFromFile(const char* fileName)
     auto   FinishTime = chrono::high_resolution_clock::now();
     auto   ElapsedTime = chrono::duration_cast<chrono::milliseconds>(FinishTime - StartTime);
     float  ElapsedSeconds = ElapsedTime.count() * 0.001f;
-    d_printgood("[%s] Added %d Actors in %.3f seconds\n", __FUNCTION__, m_Actors.size() - StartSize, ElapsedSeconds);
+    d_printgood("[%s] Added %d Actors in %.3f seconds\n", __FUNCTION__, static_cast<int>(m_Actors.size() - StartSize), ElapsedSeconds);
 #   endif
 }
 
@@ -439,7 +439,7 @@ void CLActorPool::Update(float dt)
 *       /param color Text color
 *       /param pos Label position
 */
-void CLActorPool::AddNewLabel(const char* id, const char* text, const char* font, int size, CLColor3 color, CLPos pos)
+void CLActorPool::AddNewLabel(const char* id, const char* text, const char* font, float size, CLColor3 color, CLPos pos)
 {
     CLALabel Label;
     Label.Create(text, font, size, color, pos);

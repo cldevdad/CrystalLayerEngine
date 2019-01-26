@@ -1,0 +1,60 @@
+{
+  "sprites": [
+    {
+      "id": "Ship",
+      "file": "Ship.png",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "x": -500,
+      "y": -80,
+      "z": 5
+    }
+  ],
+
+  "labels": [
+    {
+      "id": "Title",
+      "text": "Swaap Test Scene",
+      "font": "goodtimes.ttf",
+      "fontSize": 25,
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "Controls",
+      "text": "[R]eload | [ESC] Main Menu",
+      "font": "expressway.ttf",
+      "fontSize": 18,
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "x": 1025,
+      "y": 8,
+      "z": 0
+    }
+  ],
+
+  "groups": [
+    {
+      "id": "TopLine",
+      "layout": "line",
+      "size": 40,
+      "rowsize": 20,
+      "spacing_x": 32,
+      "spacing_y": 0,
+      "type": "sprite",
+      "file": "Spot.png",
+      "r": 150,
+      "g": 255,
+      "b": 150,
+      "x": -16,
+      "y": 8,
+      "z": 0
+    }
+  ]
+}

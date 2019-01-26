@@ -32,6 +32,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "timidity", "src\_external\s
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "native_midi", "src\_external\sdl2_mixer\VisualC\native_midi\native_midi.vcxproj", "{EBDA67CA-4A23-4F22-BFBC-B8DBE0580D4F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{385CB9B7-02D3-4E43-A5A6-DB863A1AF8BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SwaapTest", "tests\SwaapTest\SwaapTest.vcxproj", "{39C3247B-03F4-48D2-AA59-DBF54E6ED957}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1AD57128-49F3-4C0C-B714-069558EEA51D} = {1AD57128-49F3-4C0C-B714-069558EEA51D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -96,9 +103,20 @@ Global
 		{EBDA67CA-4A23-4F22-BFBC-B8DBE0580D4F}.Release|x64.Build.0 = Release|x64
 		{EBDA67CA-4A23-4F22-BFBC-B8DBE0580D4F}.Release|x86.ActiveCfg = Release|Win32
 		{EBDA67CA-4A23-4F22-BFBC-B8DBE0580D4F}.Release|x86.Build.0 = Release|Win32
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Debug|x64.ActiveCfg = Debug|x64
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Debug|x64.Build.0 = Debug|x64
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Debug|x86.ActiveCfg = Debug|Win32
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Debug|x86.Build.0 = Debug|Win32
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Release|x64.ActiveCfg = Release|x64
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Release|x64.Build.0 = Release|x64
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Release|x86.ActiveCfg = Release|Win32
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39C3247B-03F4-48D2-AA59-DBF54E6ED957} = {385CB9B7-02D3-4E43-A5A6-DB863A1AF8BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05044781-3E0E-4850-831D-7424DB0A8C91}

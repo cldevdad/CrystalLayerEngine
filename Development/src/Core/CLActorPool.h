@@ -56,7 +56,7 @@ public:
     // Labels
     const char* text;       //<! Text for label actors
     const char* font;       //<! Font name for label actors
-    int         fontSize;   //<! Font size for label actors
+    float       fontSize;   //<! Font size for label actors
     
     // Sprites
     const char* fileName;   //<! Image file name for sprite actors
@@ -73,7 +73,7 @@ public:
         color(CLCOLOR_WHITE),
         text(""),
         font(""),
-        fontSize(0),
+        fontSize(0.f),
         fileName("") 
     { 
     }
@@ -108,7 +108,7 @@ public:
 
 	DLLEXPORT void            RenderActors();                                         //!< Renders all actors in the pool
 	DLLEXPORT void            Update(float dt);                                       //!< Updates all actors in the pool
-	DLLEXPORT int             Size() { return m_Actors.size(); }                      //!< Returns number of actors in pool
+	DLLEXPORT int             Size() { return static_cast<int>(m_Actors.size()); }    //!< Returns number of actors in pool
 
 private:
     std::vector<APRecord>  m_Actors;         //!< Container of actor records
@@ -116,7 +116,7 @@ private:
     bool                   m_bSortOnUpdate;  //!< True when actors need to be re-sorted
 
     //! Adds a new label actor to the actor pool
-	DLLEXPORT void AddNewLabel(const char* id, const char* text, const char* font, int size, CLColor3 color, CLPos pos);
+	DLLEXPORT void AddNewLabel(const char* id, const char* text, const char* font, float size, CLColor3 color, CLPos pos);
     //! Adds a new sprite actor to the actor pool
 	DLLEXPORT void AddNewSprite(const char* id, const char* filename, CLColor3 color, CLPos pos);
     //! Adds a new group of actors to the actor pool
